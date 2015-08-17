@@ -19,8 +19,8 @@ import requests
 gesturesGiven = []
 userInput = []
 userPassword = []
-originalUsernameString = "iamjohnhahaha@gmail.com"
-originalPasswordString = "asj19981224"
+originalUsernameString = ""
+originalPasswordString = ""
 activated = False
 useringesture = ""
 userpasscheck = ""
