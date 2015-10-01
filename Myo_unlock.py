@@ -1,4 +1,6 @@
-#This program takes simple input from the Mio to unlock a complex password string and log in to gmail
+#This program takes simple input from the Mio to unlock a complex password string and log in to email
+#Further developement would allow it to log into social media accounts/computerss
+#A program by Ethan Liang
 
 from __future__ import print_function
 
@@ -106,17 +108,17 @@ class Listener(libmyo.DeviceListener):
             activated = False
 
         
-        #print("Was your gesture" + str(useringesture) + "? Please enter yes or no")
- #       print("Was your gesture" + str(useringesture) + "? Please enter yes or no")
-   #     confirm = raw_input()
-   #     while confirm != "yes" and confirm != "no":
-   #        print("Was your gesture" + str(useringesture) + "? Please enter yes or no")
- #          confirm = raw_input()    
-        #if confirm == "yes":
+        # print("Was your gesture" + str(useringesture) + "? Please enter yes or no")
+        # print("Was your gesture" + str(useringesture) + "? Please enter yes or no")
+        # confirm = raw_input()
+        # while confirm != "yes" and confirm != "no":
+        #     print("Was your gesture" + str(useringesture) + "? Please enter yes or no")
+        #     confirm = raw_input()    
+        #     if confirm == "yes":
             
-    #def keyPressHandler(event):
-     #   if event.keysym == "0":
-      #      activated = True
+        #def keyPressHandler(event):
+        #   if event.keysym == "0":
+        #      activated = True
 
 
     def on_pose(self, myo, timestamp, pose):
@@ -133,36 +135,36 @@ class Listener(libmyo.DeviceListener):
     
 
 
-#            if pose == libmyo.Pose.fist:
- #               print("Don't show me 'ya fist!")
-  #              gesturesGiven.append(pose)
-   #             print(gesturesGiven[0])
-# Stops the Hub
-    #        if pose == libmyo.Pose.wave_out:
-     #           print("abcd")
-      #          gesturesGiven.append(pose)
+       #     if pose == libmyo.Pose.fist:
+       #         print("Don't show me 'ya fist!")
+       #         gesturesGiven.append(pose)
+       #         print(gesturesGiven[0])
+       #  #Stops the Hub
+       #     if pose == libmyo.Pose.wave_out:
+       #         print("abcd")
+       #         gesturesGiven.append(pose)
        #         print(gesturesGiven)
-        #        return False
-#        if self.pose_run:
- #           return
-  #      self.pose_run = True
+       #         return False
+       # if self.pose_run:
+       #     return
+       #     self.pose_run = True
 
-#if userPassword = userInput 
-#    originalUsernameString = "iamjohnhahaha@gmail.com"
-#    originalPasswordString = "asj19981224"
-#
-#    fromaddr = originalUsernameString
-#    toaddrs = "qytiohbl@sharklasers.com"
-#    msg = "Test"
+            if userPassword == userInput:
+                originalUsernameString = ""
+                originalPasswordString = ""
 
-#    username = originalUsernameString
- #   password = originalPasswordString
-#
- #   server = smtplib.SMTP('smtp.gmail.com:587')
-  #  server.starttls()
-   # server.login(username,password)
-   # server.sendmail(fromaddr, toaddrs, msg)
-    #server.quit()
+                fromaddr = originalUsernameString
+                toaddrs = ""
+                msg = "Test"
+
+                username = originalUsernameString
+                password = originalPasswordString
+
+                server = smtplib.SMTP('smtp.gmail.com:587')
+                server.starttls()
+                server.login(username,password)
+                server.sendmail(fromaddr, toaddrs, msg)
+                server.quit()
     
 
 def main():
